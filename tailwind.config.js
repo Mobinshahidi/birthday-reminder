@@ -5,7 +5,14 @@ export default {
     './src/components/**/*.{jsx,js}'
   ],
 	theme: {
-		extend: {},
+		extend: {
+			boxShadow:{
+				"bx":"rgba(0, 0, 0, 0.1) 0px 10px 50px",
+			},
+			backgroundColor:{
+				"pr":"#370aeb", 
+			}
+		},
 	},
 	plugins: [],
 };
