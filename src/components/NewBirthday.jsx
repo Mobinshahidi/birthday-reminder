@@ -1,7 +1,6 @@
 import React, { useEffect, useState } from 'react';
 import { data } from './data';
 import { Element } from 'react-scroll';
-import persianDate from 'persian-date';
 const NewBirthday = () => {
 	const [name, setName] = useState('');
 	const [newDay, setNewDay] = useState('');
@@ -13,11 +12,6 @@ const NewBirthday = () => {
 		setBirthdayData(storedData);
 	}, []);
 
-	//variables
-	let date = new persianDate();
-	let day = date.date();
-	let month = date.month();
-	let year = date.year();
 	//adding birthday
 	const addBirthday = () => {
 		if (name && newDay && newMonth) {
@@ -43,13 +37,13 @@ const NewBirthday = () => {
 	return (
 		<Element
 			name="fourth"
-			className="h-screen w-screen flex flex-col items-center justify-center "
+			className="h-screen w-screen flex flex-col items-center justify-center overflow-x-hidden"
 		>
 			<span className="text-3xl flex items-center justify-center m-10">
 				Add A New Birthdays
 			</span>
 
-			<div className="flex flex-col w-2/4 h-2/4 m-3 bg-opacity-25 bg-white bg-blur-36 border border-opacity-25 rounded-xl p-6 shadow-lg z-10  overflow-auto">
+			<div className="flex flex-col w-2/4 h-2/4 m-3  backdrop-blur-lg bg-white bg-blur-36 border bg-opacity-80 rounded-xl p-6  shadow-b z-10  overflow-auto">
 				<input
 					type="text"
 					placeholder="name"
@@ -78,13 +72,13 @@ const NewBirthday = () => {
 				<span className="flex justify-center items-center">
 					<button
 						onClick={addBirthday}
-						className="flex w-44 mt-6 justify-center border-2 border-gray-950 rounded"
+						className="flex p-4 bg-bt text-white w-44 mt-6 justify-center border-2border-bt rounded-lg hover:bg-bth hover:border-bth"
 					>
 						Add
 					</button>
 				</span>
 			</div>
-			<span className="blob"></span>
+			<span className="blob4"></span>
 		</Element>
 	);
 };

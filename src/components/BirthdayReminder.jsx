@@ -1,15 +1,14 @@
-import React, { useEffect, useState } from 'react';
-import { data } from './data';
-import { Element } from 'react-scroll';
-import persianDate from 'persian-date';
+import React from 'react';
 import BirthdayElement from './BirthdayElement';
 import Upcoming from './Upcoming';
 import ThisMonth from './ThisMonth';
 import NewBirthday from './NewBirthday';
 import ShowAll from './ShowAll';
+import Navbar from './Navbar';
 const BirthdayReminder = () => {
 	return (
-		<div className="text-xl font-bold m-0 p-0 box-border">
+		<div className="text-xl font-bold m-0 p-0 box-border overflow-x-hidden">
+			<Navbar/>
 			<BirthdayElement />
 			<Upcoming />
 			<ThisMonth />
