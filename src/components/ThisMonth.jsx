@@ -28,7 +28,7 @@ const ThisMonth = () => {
 			</span>
 			<div className=" w-2/4 h-2/4 m-3  bg-white backdrop-blur-lg border bg-opacity-80  rounded-xl p-6 shadow-b z-10  overflow-auto">
 				<span className="text-1 mb-10">
-					{thisMonthBirthday === "" ? (
+					{thisMonthBirthday !== "" ? (
 						thisMonthBirthday
 					) : (
 						<p className="flex justify-center m-6">No one born's in this month</p>
