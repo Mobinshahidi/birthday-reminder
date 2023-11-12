@@ -1,4 +1,32 @@
 @tailwind base;
+
+:root {
+  --primary: whitesmoke;
+  --secondary: rgb(38, 52, 253);
+}
+
+/* Firefox */
+* {
+  scrollbar-width: thin;
+  scrollbar-color: var(--secondary) var(--primary);
+}
+
+/* Chrome, Edge, and Safari */
+*::-webkit-scrollbar {
+  width: 15px;
+}
+
+*::-webkit-scrollbar-track {
+  background: var(--primary);
+  border-radius: 5px;
+}
+
+*::-webkit-scrollbar-thumb {
+  background-color: var(--secondary);
+  border-radius: 20px;
+  border: 4px solid var(--primary);
+}
+
 @tailwind components;
 @tailwind utilities;
 
@@ -23,11 +51,13 @@
     inset 200px 200px 0 0px #784ba8,
     inset 300px 300px 0 0px #2b86c5;
 }
-.blob1{
+
+.blob1 {
   -webkit-animation: move1 25s infinite alternate;
   animation: move1 25s infinite alternate;
   transition: 1s cubic-bezier(0.07, 0.8, 0.16, 1);
 }
+
 @-webkit-keyframes move1 {
   from {
     transform: translate(-1000px, -50px) rotate(-100deg);
@@ -51,11 +81,13 @@
     border-radius: 76% 24% 33% 67% / 68% 55% 45% 32%;
   }
 }
-.blob2{
+
+.blob2 {
   -webkit-animation: move2 25s infinite alternate;
   animation: move2 25s infinite alternate;
   transition: 1s cubic-bezier(0.07, 0.8, 0.16, 1);
 }
+
 @-webkit-keyframes move2 {
   from {
     transform: translate(-200px, -50px) rotate(-100deg);
@@ -79,11 +111,13 @@
     border-radius: 76% 20% 33% 67% / 68% 55% 45% 32%;
   }
 }
-.blob3{
+
+.blob3 {
   -webkit-animation: move3 25s infinite alternate;
   animation: move3 25s infinite alternate;
   transition: 1s cubic-bezier(0.07, 0.8, 0.16, 1);
 }
+
 @-webkit-keyframes move3 {
   from {
     transform: translate(400px, -50px) rotate(-100deg);
@@ -107,12 +141,14 @@
     border-radius: 76% 24% 33% 50% / 68% 55% 45% 32%;
   }
 }
-.blob4{
+
+.blob4 {
   -webkit-animation: move4 25s infinite alternate;
   animation: move4 25s infinite alternate;
   transition: 1s cubic-bezier(0.07, 0.8, 0.16, 1);
 }
-@-webkit-keyframes move4 {
+
+@-webkit-keyframes move4 { 
   from {
     transform: translate(-200px, -50px) rotate(-100deg);
     border-radius: 24% 76% 35% 65% / 27% 36% 64% 73%;
@@ -135,12 +171,14 @@
     border-radius: 76% 24% 33% 70% / 68% 55% 45% 32%;
   }
 }
-.blob5{
+
+.blob5 {
   -webkit-animation: move5 25s infinite alternate;
   animation: move5 25s infinite alternate;
   transition: 1s cubic-bezier(0.07, 0.8, 0.16, 1);
-    
+
 }
+
 @-webkit-keyframes move5 {
   from {
     transform: translate(-200px, -50px) rotate(-100deg);

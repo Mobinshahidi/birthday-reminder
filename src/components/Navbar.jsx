@@ -2,7 +2,7 @@ import React, { useState } from 'react';
 import { Link } from 'react-scroll';
 const Navbar = () => {
 	return (
-		<div className="fixed z-10 flex flex-col p-8 top-1/2 right-8 transform -translate-y-1/2 overflow-x-hidden">
+		<div className="fixed z-10 flex flex-col p-8 top-1/2 right-8 transform -translate-y-1/2 overflow-x-hidden md:right-0 md:pr-2 lg:pr-2">
 			<Link
 				to="first"
 				activeClass="active"
@@ -10,7 +10,7 @@ const Navbar = () => {
 				smooth={true}
 				offset={0}
 				duration={900}
-				className="px-3 "
+				className="px-3 md:p-0 lg:p-0 "
 			>
 				<input
 					type="radio"
@@ -26,7 +26,7 @@ const Navbar = () => {
 				smooth={true}
 				offset={0}
 				duration={900}
-				className="px-3"
+				className="px-3 md:p-0 lg:p-0"
 			>
 				<input
 					type="radio"
@@ -43,7 +43,7 @@ const Navbar = () => {
 				smooth={true}
 				offset={0}
 				duration={900}
-				className="px-3"
+				className="px-3 md:p-0 lg:p-0"
 			>
 				<input
 					type="radio"
@@ -60,7 +60,7 @@ const Navbar = () => {
 				smooth={true}
 				offset={0}
 				duration={900}
-				className="px-3"
+				className="px-3 md:p-0 lg:p-0"
 			>
 				<input
 					type="radio"
@@ -77,7 +77,7 @@ const Navbar = () => {
 				smooth={true}
 				offset={0}
 				duration={900}
-				className="px-3"
+				className="px-3 md:p-0 lg:p-0"
 			>
 				<input
 					type="radio"

@@ -26,12 +26,14 @@ const ThisMonth = () => {
 			<span className="text-3xl flex items-center justify-center m-10">
 				This Month Birthdays
 			</span>
-			<div className=" w-2/4 h-2/4 m-3  bg-white backdrop-blur-lg border bg-opacity-80  rounded-xl p-6 shadow-b z-10  overflow-auto">
+			<div className=" w-2/4 h-2/4 m-3  bg-white backdrop-blur-lg border bg-opacity-80  rounded-xl p-6 shadow-b z-10  overflow-auto md:w-80 lg:w-3/4">
 				<span className="text-1 mb-10">
-					{thisMonthBirthday !== "" ? (
+					{thisMonthBirthday !== '' ? (
 						thisMonthBirthday
 					) : (
-						<p className="flex justify-center m-6">No one born's in this month</p>
+						<p className="flex justify-center m-6">
+							No one born's in this month
+						</p>
 					)}
 				</span>
 			</div>

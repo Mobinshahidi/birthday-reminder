@@ -43,7 +43,7 @@ const NewBirthday = () => {
 				Add A New Birthdays
 			</span>
 
-			<div className="flex flex-col w-2/4 h-2/4 m-3  backdrop-blur-lg bg-white bg-blur-36 border bg-opacity-80 rounded-xl p-6  shadow-b z-10  overflow-auto">
+			<div className="flex flex-col w-2/4 h-2/4 m-3  backdrop-blur-lg bg-white bg-blur-36 border bg-opacity-80 rounded-xl p-6  shadow-b z-10  overflow-auto md:w-80 lg:w-3/4">
 				<input
 					type="text"
 					placeholder="name"
