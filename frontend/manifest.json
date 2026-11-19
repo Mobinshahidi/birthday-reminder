@@ -1,0 +1,8 @@
+{
+  "name": "Birthday Reminder",
+  "short_name": "BDayReminder",
+  "start_url": "/index.html",
+  "display": "standalone",
+  "background_color": "#ffffff",
+  "theme_color": "#000000"
+}
